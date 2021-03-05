@@ -8,7 +8,8 @@
 body{
    width: 100vw;
    overflow-x: hidden;
-   margin:0;
+   margin:0px;
+   padding:0px;
 }
 
 #h-container{
@@ -18,29 +19,33 @@ body{
 }
 
 #nav-icon{
-    margin:30px 40px;
-    display:block;
-    float:left;
-    width:400px;
+   
+    display:inline-block;
+    /* float:left; */
+    position: absolute;
+    top:22px;
+    left:170px;
+
+
 }
 .nav-link .logo-img{
-    max-width:30%;
+    width:100px;
+    height:30px;
 }
 
-#nav-icon span{
-    color: #ffffff;
-   
-}
 
 .nav-list{
-    display:block;
-   float:left;
+    display:inline-block;
+    position: absolute;
+    left:250px;
+    /* float:left; */
     margin:30px 0;
 }
 
 .nav-list .nav-item{
     list-style: none;
     display: inline-block;
+    margin-right: 20px;
 }
 
 .nav-list .nav-item .nav-link{
