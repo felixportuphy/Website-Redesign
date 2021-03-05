@@ -1,13 +1,14 @@
 *{
-   
+   margin:0px;
+   padding:0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif,Lato;
 }
 
 
 body{
-   width: 100vw;
-   overflow-x: hidden;
+   /* width: 80vw; */
+   /* overflow-x: hidden; */
    margin:0px;
    padding:0px;
 }
@@ -15,7 +16,8 @@ body{
 #h-container{
     border: 1px solid black;
     height: 720px;
-    background:url("img/asset/Ashesi_NSMQ_Champions.jpg");
+    background:url("img/asset/Ashesi_NSMQ_Champions.jpg") center center/cover;
+   
 }
 
 #nav-icon{
@@ -37,7 +39,7 @@ body{
 .nav-list{
     display:inline-block;
     position: absolute;
-    left:250px;
+    left:310px;
     /* float:left; */
     margin:30px 0;
 }
@@ -172,27 +174,58 @@ display: inline-block;
 
 .mc-2{
     background: #404041;
-    height:200px;
-    padding:30px 0;
+
+    padding:30px 100px;
+    border:1px solid red;
 }
 
 .grid-2{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     width: 70%;
-    margin:20px auto;
+    margin:18px auto;
+    border:1px solid red;
+  
+   
+}
+
+.mc-2-col{
+    border: 1px solid rgb(82, 238, 21);
+    margin:10px 20px;
+    padding:0 40px;
+    width:200px;
+    
+}
+
+.mc-2-col h2,p > a{
+    color:#fff;
+    font-size:3rem;
+    font-weight:400;
+   
+   
+}
+
+
+.mc-2-col p{
+   
+    text-transform:capitalize;
    
 }
 
 
 
+.mc-3 .mc-3-banner {
+    width:100%;
+    border:1px solid red;
+}
+
+.mc-3-banner img{
+    width:inherit;
+}
 
 
 
-/*
-.mc-3 img{
-  
-}*/
+
 .grid-row-4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -220,11 +253,22 @@ display: inline-block;
    
 }
 
+.mc-5 .mc-5-banner {
+    width:100%;
+    height:400px;
+    border:1px solid red;
+}
+
+.mc-5-banner img{
+    width:inherit;
+}
+
 
 
 #footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows:minmax(auto);
     grid-column-gap:20px;
     grid-row-gap:40px;
     width: 70%;
@@ -261,6 +305,10 @@ display: inline-block;
     font-weight: 500;
 }
 
+.fc-heading{
+    margin-bottom: 10px;
+}
+
 
 #sm-wrapper  {
     display: grid;
@@ -275,11 +323,17 @@ display: inline-block;
     padding: 0;
 }
 
+.fc-row img{
+    width:80%;
+}
+
 #fc-row-span{
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-column: span 2;
+   
+
   
 }
+
 
 
