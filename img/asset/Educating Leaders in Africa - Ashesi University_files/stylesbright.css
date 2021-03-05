@@ -1,0 +1,227 @@
+@charset 'utf-8';
+/* CSS Document */
+
+
+
+@font-face{
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+
+	src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+}
+
+.aikon-search .fa{
+	display: inline-block;
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.aikon-search .fa-paper-plane-o:before{
+	content: '\f1d9';
+}
+
+.aikon-search{
+	background-color: rgba(255,255,255,0.0);
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	top: -500px;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+	width: 100%;
+	z-index: -999999999;
+}
+
+.aikon-search.openit{
+	background-color: rgba(255,255,255,0.9);
+	opacity: 1;
+	top: 0;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+	z-index: 999999999;
+}
+
+.aikon-search .closeit{
+	border: solid 2px #333333;
+	border-radius: 50%;
+	bottom: 0;
+	color: #333333;
+	cursor: pointer;
+	font-family: arial;
+	font-size: 25px;
+	height: 39px;
+	left: 0;
+	margin: auto;
+	padding-top: 11px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: -250px;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+	width: 50px;
+}
+
+.aikon-search .closeit:hover{
+	border-color: #4cbfff;
+	color: #4cbfff;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+}
+
+.aikon-search p{
+	bottom: 0;
+	color: #333333;
+	font-size: 35px;
+	height: 35px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: -120px;
+	width: 100%;
+}
+
+.aikon-search form{
+	bottom: 0;
+	height: 50px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 30px;
+	width: 590px;
+}
+
+.aikon-search .formcontainer{
+	bottom: 0;
+	height: 200px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: -300px;
+	-webkit-transition: all 0.5s ease-out;
+	   -moz-transition: all 0.5s ease-out;
+	    -ms-transition: all 0.5s ease-out;
+	     -o-transition: all 0.5s ease-out;
+	        transition: all 0.5s ease-out;
+	width: 100%;
+}
+
+.aikon-search.openit .formcontainer{
+	bottom: 0;
+	height: 200px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 50px;
+	-webkit-transition: all 0.5s ease-out;
+	   -moz-transition: all 0.5s ease-out;
+	    -ms-transition: all 0.5s ease-out;
+	     -o-transition: all 0.5s ease-out;
+	        transition: all 0.5s ease-out;
+	width: 100%;
+}
+
+.aikon-search input.aikon-searchbox{
+	background-color: #333333;
+	border: none 0;
+	border-bottom-left-radius: 3px;
+	border-radius: 0;
+	border-top-left-radius: 3px;
+	box-shadow: 0 0 0 transparent;
+	color: #ffffff;
+	display: inline-block;
+	float: right;
+	font-family: arial;
+	font-size: 15px;
+	height: 58px;
+	margin: auto;
+	padding: 0;
+	padding-left: 20px;
+	width: 480px;
+}
+
+.aikon-search input.aikon-searchbox:focus{
+	background-color: #222222;
+}
+
+.aikon-search button.aikon-searchbtn{
+	background-color: #111111;
+	border: none 0 transparent;
+	border-bottom-right-radius: 3px;
+	border-left: solid 1px #aaaaaa;
+	border-top-right-radius: 3px;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-size: 25px;
+	height: 58px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+	width: 70px;
+}
+
+.aikon-search button.aikon-searchbtn:hover{
+	background-color: #4cbfff;
+	color: #ffffff;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+}
+
+.aikon-search *::-webkit-input-placeholder{
+	color: #ffffff;
+	font-family: 'arial';
+	font-size: 15px;
+}
+
+.aikon-search *:-moz-placeholder{
+	color: #ffffff;
+	font-family: 'arial';
+	font-size: 15px;
+}
+
+.aikon-search *::-moz-placeholder{
+	color: #ffffff;
+	font-family: 'arial';
+	font-size: 15px;
+}
+
+.aikon-search *:-ms-input-placeholder{
+	color: #ffffff;
+	font-family: 'arial';
+	font-size: 15px;
+}
