@@ -68,8 +68,12 @@ body{
     border-bottom:3px solid #be1e2d;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:not(#nav-search):hover{
     border-bottom:3px solid #be1e2d;
+}
+
+.nav-item #nav-search:hover{
+    color: #be1e2d;
 }
 
 .nav-sub-list #nav-item {
@@ -241,6 +245,7 @@ display: inline-block;
     height:130px;
     margin:20px 0;
     padding:0px 20px 20px 0px ;
+    cursor: pointer;
     
 }
 
@@ -386,9 +391,7 @@ display: inline-block;
 #sm-wrapper  {
     display: grid;
     grid-template-columns:repeat(4,1fr);
-    width:300px;
-
-   
+    width:160px;
 }
 
 
